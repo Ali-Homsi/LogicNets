@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+datasets = {git = "ssh://git@git.uni-due.de/embedded-systems/artificial-intelligence/datasets.git"}
+qkeras = {ref = "ea88127140535469a30b3b4d83ba3d0c7df52e0f", git = "ssh://git@git.uni-due.de/embedded-systems/artificial-intelligence/qnn.git"}
+tensorflow = "*"
+wfdb = "*"
+tensorboard = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
